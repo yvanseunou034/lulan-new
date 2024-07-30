@@ -1,0 +1,535 @@
+/* styles.css */
+/*.product-slideshow {
+    
+    overflow: hidden;
+}
+
+.product-image {
+    transition: opacity 1s ease, z-index 0s 0.5s;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.product-image img {   
+    width: 100%;
+    display: block;
+}
+
+.product-image.active {
+    opacity: 10;
+    z-index: 2;
+    transition: opacity 0.5s ease, z-index 0s 0;
+
+}
+*/
+
+#testimonials {
+  padding: 30px 0;
+}
+
+
+@media (max-width: 168px) {
+    .testimonial-detail {
+      text-align: center;
+      padding: 15px;
+    }
+    
+    .review-icon {
+      margin-bottom: 15px;
+    }
+  }
+
+  /* partie fashion pour blog */
+  #fashion-tips {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.fashion-tip-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tip-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.tip-title a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-top: 10px;
+    display: block;
+}
+.tip-description {
+    color: #777;
+    font-size: 1em;
+}
+/* diminuer l'espacement entre produit vedette et les autres */
+
+#featured-products .section-header {
+  margin-bottom: -100px; /* Ajustez cette valeur selon vos besoins */
+}
+
+#featured-products .swiper {
+  margin-top: 10px; /* Ajustez cette valeur selon vos besoins */
+}
+
+#latest-collection {
+  margin-top: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+#latest-collection .product-collection {
+  margin-top: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+
+/* Section Testimonials */
+
+#testimonials .review-icon i {
+  font-size: 3rem;
+}
+#testimonials .testimonial-detail {
+  font-size: 1rem;
+}
+#testimonials .swiper-button-next, #testimonials .swiper-button-prev {
+  color: #000;
+}
+#testimonials {
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la section */
+  background-position: center center; /* Centre l'image dans la section */
+  padding: 50px 0; /* Augmente l'espace interne (padding) */
+}
+
+#testimonials .reviews-content {
+  padding: 20px 0; /* Ajuste l'espace interne du contenu */
+}
+
+#testimonials .testimonial-swiper {
+  height: auto; /* Hauteur auto pour que le texte ajuste correctement */
+  overflow: hidden; /* Empêche le débordement du contenu */
+}
+
+#testimonials .swiper-slide {
+  display: flex;
+  align-items: center; /* Centre le contenu verticalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  height: 100%; /* Assure que chaque diapositive prend toute la hauteur du swiper */
+  padding: 20px; /* Ajoute du padding pour éviter le chevauchement du texte */
+  box-sizing: border-box; /* Assure que le padding est inclus dans les dimensions */
+}
+
+#testimonials .testimonial-detail {
+  font-size: 16px; /* Augmente la taille du texte */
+  max-width: 90%; /* Limite la largeur du texte pour éviter les débordements */
+  text-align: center; /* Centre le texte pour une meilleure présentation */
+  padding: 10px; /* Ajoute du padding autour du texte */
+}
+
+#testimonials .author-detail .name {
+  font-size: 14px; /* Augmente la taille du texte du nom de l'auteur */
+}
+
+/* Styles pour les boutons de navigation du swiper */
+#testimonials .swiper-button-next,
+#testimonials .swiper-button-prev {
+  color: #000; /* Couleur des flèches de navigation */
+}
+
+#testimonials .swiper-pagination {
+  bottom: 10px; /* Position de la pagination */
+}
+
+/* Section Flash Sales */
+#flash-sales {
+    padding: 20px 0; /* Ajuste l'espacement interne de la section */
+}
+
+#flash-sales .container {
+    max-width: 100%; /* Réduit la largeur de la section pour un effet plus compact */
+}
+
+#flash-sales .section-header {
+    margin-bottom: 20px; /* Ajuste l'espacement en dessous du titre de la section */
+}
+
+#flash-sales .swiper-slide {
+    padding: 30px; /* Ajuste l'espacement interne des éléments de produit */
+    box-sizing: border-box; /* Assure que le padding est inclus dans les dimensions */
+}
+
+#flash-sales .product-item {
+    max-width: 100%; /* Assure que les éléments de produit n'excèdent pas la largeur disponible */
+}
+
+/* Section Quotation */
+#quotation {
+    padding: 20px; /* Ajuste l'espacement interne de la section */
+}
+
+#quotation .inner-content {
+    padding: 10px; /* Ajuste l'espacement interne du contenu */
+    box-sizing: border-box; /* Assure que le padding est inclus dans les dimensions */
+}
+
+
+/* pour diminuer la section des produits vedette*/
+
+#featured-products {
+  padding: 10px ; /* Réduit l'espace autour de la section */
+}
+
+#subscribe {
+  padding: 10px ; /* Réduction du padding pour diminuer la taille de la section */
+}
+#subscribe .section-title {
+  font-size: 1.5rem; /* Réduction de la taille de la police pour le titre */
+}
+#subscribe p {
+  font-size: 1rem; /* Réduction de la taille de la police pour le texte */
+}
+#subscribe input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+#subscribe button {
+  flex-shrink: 0;
+}
+
+/* section brand*/
+
+#brand-collection {
+  padding: 20px 0;
+}
+.brand-image {
+  max-width: 100%;
+  height: auto;
+  margin: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.brand-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+#quotation {
+  background: rgba(255, 255, 255, 0.8); /* Fond transparent */
+  padding: 1rem; /* Réduire la taille */
+  text-align: center; /* Centrer le texte */
+}
+
+#quotation .inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px; /* Limite la largeur */
+  margin: 0 auto; /* Centre horizontalement */
+}
+
+#quotation .author-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+#quotation .author-name {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+#quotation .author-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Rendre l'image circulaire */
+  object-fit: cover; /* S'assurer que l'image reste proportionnée */
+  transition: transform 0.3s ease-in-out;
+}
+
+#quotation .author-image:hover {
+  transform: scale(1.1); /* Effet de zoom sur survol */
+}
+
+#quotation blockquote {
+  margin: 0;
+  font-size: 0.9rem; /* Taille de police réduite */
+}
+
+#quotation q {
+  font-style: italic;
+  color: #333; /* Couleur du texte de la citation */
+}
+
+#quotation .section-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem; /* Taille de police réduite */
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  #quotation .inner-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+#selling-products {
+  padding: 2rem 1rem; /* Ajuster le padding pour mieux s'adapter aux petits écrans */
+}
+
+#selling-products .product-item {
+  margin-bottom: 1.5rem; /* Espacement entre les articles */
+}
+
+#selling-products .product-image {
+  width: 100%; /* S'adapte à la largeur du conteneur */
+  height: auto; /* Maintient les proportions */
+  border-radius: 8px; /* Coins arrondis pour un effet moderne */
+  object-fit: cover; /* Assure que l'image couvre le conteneur sans déformer */
+}
+
+@media (max-width: 767px) {
+  #selling-products .product-item {
+    margin-bottom: 1rem; /* Réduit l'espacement sur les petits écrans */
+  }
+}
+
+@media (min-width: 576px) {
+  #selling-products .product-item {
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #selling-products .product-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #selling-products .product-item {
+    margin-bottom: 2rem;
+  }
+}
+
+.section-title {
+  position: relative;
+  font-size: 1.5rem; /* Ajustez la taille du texte selon vos besoins */
+  margin-bottom: 2rem; /* Ajustez l'espace sous le titre */
+}
+
+.ribbon {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 2rem; /* Ajustez les espaces autour du texte */
+  background-color: #dba231; /* Couleur du ruban */
+  color: #fff; /* Couleur du texte */
+  border-radius: 5px; /* Bord arrondi du ruban */
+}
+
+.ribbon::before, .ribbon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.ribbon::before {
+  left: -1rem;
+  border-width: 0.5rem 1rem 0.5rem 0;
+  border-color: transparent #dba231 transparent transparent; /* Ajustez les couleurs pour correspondre au ruban */
+}
+
+.ribbon::after {
+  right: -1rem;
+  border-width: 0.5rem 0 0.5rem 1rem;
+  border-color: transparent transparent transparent #dba231; /* Ajustez les couleurs pour correspondre au ruban */
+}
+
+
+
+
+/* Styles de base pour le footer */
+#footer {
+  background-color: rgb(157, 126, 41, 0.5); /* Couleur de fond du footer */
+  padding: 2rem 0;
+}
+
+.footer-menu-list {
+  border-top: 1px solid #e0e0e0; /* Ligne de séparation */
+  padding-top: 2rem;
+}
+
+.footer-menu {
+  margin-bottom: 2rem;
+}
+
+.footer-menu h5 {
+  font-size: 1.25rem; /* Taille du titre */
+  margin-bottom: 1rem; /* Espace sous le titre */
+}
+
+.menu-list li {
+  margin-bottom: 0.5rem;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-list a:hover {
+  color: #007bff; /* Couleur au survol */
+}
+
+.email {
+  color: #007bff; /* Couleur de l'email */
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.social-links ul {
+  padding: 0;
+}
+
+.social-links li {
+  margin-right: 1rem;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 1.5rem; /* Taille des icônes sociales */
+}
+
+.social-links a:hover {
+  color: #007bff; /* Couleur au survol */
+}
+
+/* Styles pour écrans très petits */
+@media (max-width: 576px) {
+  .footer-menu-list {
+    text-align: center;
+  }
+
+  .footer-menu {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  .footer-menu-list .row {
+    display: flex;
+    flex-wrap: nowrap;
+   
+  }
+}
+
+  @media (max-width: 576px) { /* Cible les écrans très petits */
+    .footer-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centrer les éléments horizontalement */
+    }
+  
+    .footer-item {
+      width: 100%;
+      text-align: center; /* Centrer le texte */
+      margin-bottom: 1rem; /* Ajouter de l'espace entre les éléments */
+    }
+  
+    .footer-item .social-links ul {
+      justify-content: center; /* Centrer les icônes sociales */
+    }
+  
+    .footer-item .social-links ul li {
+      margin: 0 0.5rem; /* Ajouter un espace entre les icônes */
+    }
+  }
+
+
+
+  .testimonial-area {
+    background-color: #f9f9f9;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  
+  .section-title h6 {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .section-title h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .single-testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 15px;
+  }
+  
+  .testimonial-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .rating-box ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .rating-box ul li {
+    display: inline-block;
+    color: #f39c12;
+  }
+  
+  .rating-box h6 {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+  
+  .author-info-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .author-img {
+    margin-right: 20px;
+  }
+  
+  .author-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .author-bio-info h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .author-bio-info span {
+    font-size: 14px;
+    color: #888;
+  }
